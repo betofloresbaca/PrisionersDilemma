@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrisionersDilemma", "PrisionersDilemma\PrisionersDilemma.csproj", "{28A6316E-D63F-4BFB-822D-06F6E50DD16B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20603154-96AB-43E8-8E29-A1127E865F1B}
+	EndGlobalSection
+EndGlobal
