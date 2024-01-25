@@ -4,5 +4,5 @@ internal interface IStrategy
 {
     bool GetAction();
 
-    void SetOpponentsAction(bool action);
+    void SetOpponentsAction(bool oponentAction);
 }
