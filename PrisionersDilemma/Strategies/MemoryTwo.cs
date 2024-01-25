@@ -43,12 +43,12 @@ internal class MemoryTwo : IStrategy
         return currentTurnAction;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        titForTat.SetOpponentsAction(action);
-        allD.SetOpponentsAction(action);
-        titForTwoTat.SetOpponentsAction(action);
-        UpdateMemory(action);
+        titForTat.SetOpponentsAction(opponentsAction);
+        allD.SetOpponentsAction(opponentsAction);
+        titForTwoTat.SetOpponentsAction(opponentsAction);
+        UpdateMemory(opponentsAction);
         if (currentStrategyLeftMoves == 0)
         {
             ChooseNextStrategy();
@@ -78,9 +78,9 @@ internal class MemoryTwo : IStrategy
         }
     }
 
-    private void UpdateMemory(bool action)
+    private void UpdateMemory(bool opponentsAction)
     {
-        memory.Enqueue((currentTurnAction, action));
+        memory.Enqueue((currentTurnAction, opponentsAction));
         memory.Dequeue();
     }
 }

@@ -16,9 +16,9 @@ internal class Pavlov : IStrategy
         return IsCooperating;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        if (!action)
+        if (!opponentsAction)
         {
             IsCooperating = !IsCooperating;
         }

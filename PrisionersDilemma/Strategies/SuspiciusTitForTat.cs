@@ -7,15 +7,15 @@
 /// </summary>
 internal class SuspiciusTitForTat : IStrategy
 {
-    private bool LastOpponentAction = false;
+    private bool lastOpponentAction = false;
 
     public bool GetAction()
     {
-        return LastOpponentAction;
+        return lastOpponentAction;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        this.LastOpponentAction = action;
+        this.lastOpponentAction = opponentsAction;
     }
 }

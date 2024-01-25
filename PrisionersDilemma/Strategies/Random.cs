@@ -10,5 +10,5 @@ internal class Random : IStrategy
         return System.Random.Shared.Next(0, 2) == 1;
     }
 
-    public void SetOpponentsAction(bool action) { }
+    public void SetOpponentsAction(bool opponentsAction) { }
 }

@@ -30,17 +30,17 @@ internal class Prober : IStrategy
         return lastOponentAction;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
         if (turn < probe.Length)
         {
-            probeOpponetActions[turn] = action;
+            probeOpponetActions[turn] = opponentsAction;
         }
         else if (turn == probe.Length)
         {
             IsDefeatingRage = !probeOpponetActions[1] && !probeOpponetActions[2];
         }
-        lastOponentAction = action;
+        lastOponentAction = opponentsAction;
         turn += 1;
     }
 }

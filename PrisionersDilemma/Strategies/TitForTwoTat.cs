@@ -6,16 +6,16 @@
 /// </summary>
 internal class TitForTwoTat : IStrategy
 {
-    private bool[] LastOpponentActions = [true, true];
+    private bool[] lastOpponentActions = [true, true];
 
     public bool GetAction()
     {
-        return LastOpponentActions[0] || LastOpponentActions[1];
+        return lastOpponentActions[0] || lastOpponentActions[1];
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        LastOpponentActions[0] = LastOpponentActions[1];
-        LastOpponentActions[1] = action;
+        lastOpponentActions[0] = lastOpponentActions[1];
+        lastOpponentActions[1] = opponentsAction;
     }
 }

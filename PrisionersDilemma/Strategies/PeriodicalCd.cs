@@ -5,12 +5,12 @@
 /// </summary>
 internal class PeriodicalCd : IStrategy
 {
-    private int Turn = 0;
+    private int turn = 0;
 
     public bool GetAction()
     {
-        return Turn++ % 2 == 0;
+        return turn++ % 2 == 0;
     }
 
-    public void SetOpponentsAction(bool action) { }
+    public void SetOpponentsAction(bool opponentsAction) { }
 }

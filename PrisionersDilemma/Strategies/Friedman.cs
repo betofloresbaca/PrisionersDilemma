@@ -13,9 +13,9 @@ internal class Friedman : IStrategy
         return IsCooperating;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        if (!action)
+        if (!opponentsAction)
         {
             this.IsCooperating = false;
         }

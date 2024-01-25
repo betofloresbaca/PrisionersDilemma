@@ -10,5 +10,5 @@ internal class AllD : IStrategy
         return false;
     }
 
-    public void SetOpponentsAction(bool action) { }
+    public void SetOpponentsAction(bool opponentsAction) { }
 }

@@ -6,15 +6,15 @@
 /// </summary>
 internal class TitForTat : IStrategy
 {
-    private bool LastOpponentAction = true;
+    private bool lastOpponentAction = true;
 
     public bool GetAction()
     {
-        return LastOpponentAction;
+        return lastOpponentAction;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        this.LastOpponentAction = action;
+        this.lastOpponentAction = opponentsAction;
     }
 }

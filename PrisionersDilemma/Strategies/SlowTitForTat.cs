@@ -7,25 +7,25 @@
 /// </summary>
 internal class SlowTitForTat : IStrategy
 {
-    private bool IsCooperating = true;
-    private bool[] LastOpponentActions = [true, true];
+    private bool isCooperating = true;
+    private bool[] lastOpponentActions = [true, true];
 
     public bool GetAction()
     {
-        return IsCooperating;
+        return isCooperating;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        LastOpponentActions[0] = LastOpponentActions[1];
-        LastOpponentActions[1] = action;
-        if (LastOpponentActions.All(x => x))
+        lastOpponentActions[0] = lastOpponentActions[1];
+        lastOpponentActions[1] = opponentsAction;
+        if (lastOpponentActions.All(x => x))
         {
-            IsCooperating = true;
+            isCooperating = true;
         }
-        else if (LastOpponentActions.All(x => !x))
+        else if (lastOpponentActions.All(x => !x))
         {
-            IsCooperating = false;
+            isCooperating = false;
         }
     }
 }

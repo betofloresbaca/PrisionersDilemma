@@ -14,8 +14,8 @@ internal class HardMajority : IStrategy
         return OponenentActionsBalance > 0;
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
-        OponenentActionsBalance += action ? 1 : -1;
+        OponenentActionsBalance += opponentsAction ? 1 : -1;
     }
 }

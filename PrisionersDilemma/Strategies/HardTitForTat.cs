@@ -14,9 +14,9 @@ internal class HardTitForTat : IStrategy
         return turn++ < 2 || lastOpponentActions.All(x => x);
     }
 
-    public void SetOpponentsAction(bool action)
+    public void SetOpponentsAction(bool opponentsAction)
     {
         lastOpponentActions[0] = lastOpponentActions[1];
-        lastOpponentActions[1] = action;
+        lastOpponentActions[1] = opponentsAction;
     }
 }
