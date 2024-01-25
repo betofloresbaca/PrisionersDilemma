@@ -70,6 +70,29 @@ internal class Runner
         return contestResults;
     }
 
+    public Dictionary<string, double> RunMeanContest(
+        int contests,
+        int rounds = 200,
+        double noise = 0.0
+    )
+    {
+        Dictionary<string, double> contestResults = new();
+        for (int i = 0; i < contests; i++)
+        {
+            contestResults = this.RunContest(rounds, noise)
+                .ToList()
+                .Select(x =>
+                    (
+                        x.Key,
+                        x.Value * 1.0 / contests
+                            + (contestResults.ContainsKey(x.Key) ? contestResults[x.Key] : 0)
+                    )
+                )
+                .ToDictionary(x => x.Item1, x => x.Item2);
+        }
+        return contestResults;
+    }
+
     private bool AddNoise(bool action, double noise)
     {
         return System.Random.Shared.NextDouble() < noise ? !action : action;
