@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrisionersDilemma", "PrisionersDilemma\PrisionersDilemma.csproj", "{28A6316E-D63F-4BFB-822D-06F6E50DD16B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrisionersDilemma", "PrisionersDilemma\PrisionersDilemma.csproj", "{28A6316E-D63F-4BFB-822D-06F6E50DD16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrisionersDilemma.Core", "PrisionersDilemma.Core\PrisionersDilemma.Core.csproj", "{94C1D2E0-1434-4E14-B1D9-6BAC123CCD7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28A6316E-D63F-4BFB-822D-06F6E50DD16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C1D2E0-1434-4E14-B1D9-6BAC123CCD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C1D2E0-1434-4E14-B1D9-6BAC123CCD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C1D2E0-1434-4E14-B1D9-6BAC123CCD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C1D2E0-1434-4E14-B1D9-6BAC123CCD7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
